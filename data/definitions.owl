@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/finance#Liabilities">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>Obligations or debts owed to others.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/finance#Emergency_Fund">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>Money set aside for unexpected expenses.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/finance#Assets">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>Resources with economic value, like property or cash.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/finance#Net_Worth">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>The value of all assets minus liabilities.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/finance#Fixed_Expenses">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>Costs that do not change from month to month, like rent or insurance.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/finance#Gross_Income">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>Total income before taxes and deductions.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/finance#Amortization">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>The process of paying off debt in regular installments.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/finance#Variable_Expenses">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>Costs that change based on usage, like groceries or utilities.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/finance#Diversification">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>The practice of spreading investments to reduce risk.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/finance#Capital_Gains">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>Profits from the sale of assets like stocks or property.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/finance#Retirement_Planning">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>Preparing financially for life after work.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/finance#Credit_Score">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>A number representing your creditworthiness.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/finance#Compound_Interest">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>Interest calculated on the initial principal and accumulated interest.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/finance#Interest_Rate">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>The percentage charged on borrowed money or earned on savings.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/finance#Investing">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>The process of allocating money with the expectation of a return.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/finance#Savings">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>The portion of income not spent on expenses.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/finance#Tax_Bracket">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>The rate at which income is taxed.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/finance#Budgeting">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>The process of creating a plan for your money.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/finance#Net_Income">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>The amount left after taxes and deductions.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/finance#Expense_Ratio">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>The cost of managing an investment fund.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/finance#Inflation">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>The rate at which prices for goods and services rise.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/finance#Debt-to-Income_Ratio">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>This ratio compares your monthly debt payments to your income.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/finance#Liquidity">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>How quickly an asset can be converted into cash.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/finance#Risk_Tolerance">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>An individual's ability to endure financial loss.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/finance#Cash_Flow">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>The movement of money in and out of your accounts.</rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,111 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container">
+  <h1 class="my-4 text-center">Personal Finance Tutor</h1>
+
+  <form
+    action="/calculate"
+    method="POST"
+    class="needs-validation text-lg d-flex p-2 gap-3 flex-column">
+    <div class="input-group">
+      <label class="input-group-text" for="income">Income: </label>
+      <input
+        type="number"
+        class="form-control"
+        id="income"
+        name="income"
+        required />
+      <span class="input-group-text" for="income">£</span>
+    </div>
+
+    <div class="input-group">
+      <label for="expenses" class="input-group-text">Expenses</label>
+      <input
+        type="number"
+        class="form-control"
+        id="expenses"
+        name="expenses"
+        required />
+      <span class="input-group-text" for="income">£</span>
+    </div>
+
+    <div class="input-group">
+      <label for="debt" class="input-group-text">Debt</label>
+      <input
+        type="number"
+        class="form-control"
+        id="debt"
+        name="debt"
+        required />
+      <span class="input-group-text" for="income">£</span>
+    </div>
+
+    <div class="input-group">
+      <label for="investment" class="input-group-text">Investment</label>
+      <input
+        type="number"
+        class="form-control"
+        id="investment"
+        name="investment"
+        required />
+      <span class="input-group-text" for="income">£</span>
+    </div>
+
+    <div class="input-group">
+      <label for="goal_amount" class="input-group-text"
+        >Financial Goal Amount</label
+      >
+      <input
+        type="number"
+        class="form-control"
+        id="goal_amount"
+        name="goal_amount"
+        required />
+      <span class="input-group-text" for="income">£</span>
+    </div>
+
+    <div class="input-group">
+      <label for="credit_score" class="input-group-text">Credit Score</label>
+      <input
+        type="number"
+        class="form-control"
+        id="credit_score"
+        name="credit_score"
+        required />
+      <span class="input-group-text" for="income">£</span>
+    </div>
+
+    <div class="input-group">
+      <label for="debt_repayment_strategy" class="input-group-text"
+        >Debt Repayment Strategy</label
+      >
+      <select
+        id="debt_repayment_strategy"
+        name="debt_repayment_strategy"
+        class="form-select"
+        required>
+        <option value="DebtAvalanche">Debt Avalanche</option>
+        <option value="DebtSnowball">Debt Snowball</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label for="investment_strategy" class="input-group-text"
+        >Investment Strategy</label
+      >
+      <select
+        id="investment_strategy"
+        name="investment_strategy"
+        class="form-select"
+        required>
+        <option value="LongTermInvestment">Long-Term Investment</option>
+        <option value="ShortTermInvestment">Short-Term Investment</option>
+      </select>
+    </div>
+
+    <input
+      type="submit"
+      class="btn btn-primary btn-lg w-100"
+      value="Calculate" />
+  </form>
+</div>
+{% endblock %}

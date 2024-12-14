@@ -1,0 +1,14 @@
+body {
+  background-color: #292929;
+  padding: 10px 50px;
+}
+.navbar {
+  background-color: #0f1113;
+}
+
+.gap-4 {
+  gap: 4px;
+}
+.gap-8 {
+  gap: 8px;
+}

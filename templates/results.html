@@ -1,0 +1,68 @@
+{% extends 'base.html' %} {% block content %}
+<h1 class="my-4 text-center">Financial Plan Results</h1>
+
+<!-- Financial Plan Summary -->
+<ul class="list-group">
+  <li class="list-group-item">
+    <strong>Monthly Savings: </strong> ${{ monthly_savings }}
+  </li>
+  <li class="list-group-item">
+    <strong>Time to Reach Financial Goal: </strong> {{ time_to_goal }} months
+  </li>
+  <li class="list-group-item">
+    <strong>Debt Repayment Strategy: </strong> {{ debt_strategy }}
+  </li>
+  <li class="list-group-item">
+    <strong>Investment Strategy: </strong> {{ investment_strategy }}
+  </li>
+</ul>
+
+<!-- Personalized Savings, Debt, and Investment Feedback -->
+{% if savings_message or debt_message or investment_message %}
+<div class="mt-4">
+  <h3 class="text-center">Personalized Financial Feedback</h3>
+
+  {% if savings_message %}
+  <div class="alert alert-info">
+    <p><strong>Savings Advice: </strong>{{ savings_message }}</p>
+  </div>
+  {% endif %} {% if debt_message %}
+  <div class="alert alert-warning">
+    <p><strong>Debt Repayment Advice: </strong>{{ debt_message }}</p>
+  </div>
+  {% endif %} {% if investment_message %}
+  <div class="alert alert-success">
+    <p><strong>Investment Advice: </strong>{{ investment_message }}</p>
+  </div>
+  {% endif %}
+</div>
+{% endif %}
+
+<!-- Financial Tips Section -->
+<div class="mt-4">
+  <h3 class="text-center">Financial Tips</h3>
+  <ul class="list-group">
+    {% if tips %} {% for tip in tips %}
+    <li class="list-group-item">{{ tip }}</li>
+    {% endfor %} {% else %}
+    <li class="list-group-item">
+      No additional tips at the moment. Keep up the good work!
+    </li>
+    {% endif %}
+  </ul>
+</div>
+
+<!-- Progress Tracker -->
+<div class="mt-4">
+  <h3 class="text-center">Your Progress</h3>
+  <div class="alert alert-success text-center">
+    <p>{{ progress_message }}</p>
+  </div>
+</div>
+
+<!-- Go Back Button -->
+<div class="mt-4 text-center">
+  <a href="/" class="btn btn-primary">Go Back</a>
+</div>
+
+{% endblock %}

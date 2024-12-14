@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Classes: Key Concepts in Personal Finance -->
+    <rdf:Description rdf:about="#Income"/>
+    <rdf:Description rdf:about="#Expense"/>
+    <rdf:Description rdf:about="#Savings"/>
+    <rdf:Description rdf:about="#Debt"/>
+    <rdf:Description rdf:about="#Investment"/>
+    <rdf:Description rdf:about="#Budget"/>
+    <rdf:Description rdf:about="#CreditScore"/>
+    <rdf:Description rdf:about="#FinancialGoal"/>
+    <rdf:Description rdf:about="#DebtRepaymentStrategy"/>
+    <rdf:Description rdf:about="#InvestmentStrategy"/>
+
+    <!-- Object Properties: Relationships between Financial Concepts -->
+    <rdf:Description rdf:about="#hasIncome"/>
+    <rdf:Description rdf:about="#hasExpense"/>
+    <rdf:Description rdf:about="#hasSavings"/>
+    <rdf:Description rdf:about="#hasDebt"/>
+    <rdf:Description rdf:about="#hasInvestment"/>
+    <rdf:Description rdf:about="#hasBudget"/>
+    <rdf:Description rdf:about="#hasCreditScore"/>
+    <rdf:Description rdf:about="#hasFinancialGoal"/>
+    <rdf:Description rdf:about="#hasDebtRepaymentStrategy"/>
+    <rdf:Description rdf:about="#hasInvestmentStrategy"/>
+
+    <!-- Data Properties: Financial Parameters -->
+    <rdf:Description rdf:about="#amount"/>
+    <rdf:Description rdf:about="#interestRate"/>
+    <rdf:Description rdf:about="#goalAmount"/>
+    <rdf:Description rdf:about="#monthlyContribution"/>
+    <rdf:Description rdf:about="#creditScoreValue"/>
+    <rdf:Description rdf:about="#duration"/>
+
+    <!-- Class Hierarchy: Sub-classes for Detailed Financial Concepts -->
+    <rdf:Description rdf:about="#FixedExpense">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdf:subClassOf rdf:resource="#Expense"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="#VariableExpense">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdf:subClassOf rdf:resource="#Expense"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="#DebtRepaymentStrategy">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="#DebtSnowball">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdf:subClassOf rdf:resource="#DebtRepaymentStrategy"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="#DebtAvalanche">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdf:subClassOf rdf:resource="#DebtRepaymentStrategy"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="#InvestmentStrategy">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="#LongTermInvestment">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdf:subClassOf rdf:resource="#InvestmentStrategy"/>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="#ShortTermInvestment">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdf:subClassOf rdf:resource="#InvestmentStrategy"/>
+    </rdf:Description>
+
+</rdf:RDF>
